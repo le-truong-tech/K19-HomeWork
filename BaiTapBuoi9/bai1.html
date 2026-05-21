@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .square {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            border-top: 5px;
+            border-right: 5px;
+            border-bottom: 5px;
+            border-left: 5px;
+            border-style: solid;
+            border-color: red;
+
+        }
+        .rectangle {
+            display: inline-block;
+            width: 170px;
+            height: 100px;
+            border-top: 5px;
+            border-right: 5px;
+            border-bottom: 5px;
+            border-left: 5px;
+            border-style: solid;
+            border-color: cadetblue;
+        }
+        .triangle-top {
+            display: inline-block;
+            border-top:50px;
+            border-right: 30px;
+            border-bottom: 70px;
+            border-left: 30px;
+            border-style: solid;
+            border-color: green;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-left-color: transparent;
+
+        }
+        .triangle-bot {
+            display: inline-block;
+            border: 50px solid orange;
+            border-width: 70px 30px 0px 30px;
+            border-color: orange transparent transparent transparent;
+        }
+        .triangle-left {
+            display: inline-block;
+            border: 50px solid orange;
+            border-width: 30px 0px 30px 70px;
+            border-color: transparent transparent transparent purple;
+        }
+        .triangle-right {
+            display: inline-block;
+            border: 50px solid orange;
+            border-width: 30px 70px 30px 0px;
+            border-color: transparent brown transparent transparent;
+        }
+        .trapezium {
+            display: inline-block;
+            width: 50px;
+            border-width: 50px 20px;
+            border-style: solid;
+            border-color: transparent transparent darkcyan transparent;
+        }
+        .triangle-width {
+            display: inline-block;
+            border: 50px solid darkblue;
+            border-color: transparent transparent darkblue transparent;
+        }
+        .acute-triangle {
+            display: inline-block;
+            border-width: 0px 20px 80px 20px;
+            border-style: solid;
+            border-color: transparent transparent firebrick transparent;
+        }
+        .isosceles-triangle{
+            display: inline-block;
+            border-width: 0 30px 60px 30px;
+            border-style: solid;
+            border-color: transparent transparent darkorange transparent;
+        }
+        .isosceles-triangle-left, .isosceles-triangle-right {
+            display: inline-block;
+            border-width: 30px 0px 30px 60px;
+            border-style: solid;
+            border-color: transparent transparent transparent cadetblue;
+        }
+        .isosceles-triangle-right {
+            border-right-width: 60px;
+            border-left-color: transparent;
+            border-right-color: purple;
+        }
+        .flag {
+            display: inline-block;
+            border-width: 25px 25px 25px 75px;
+            border-style: solid;
+            border-color: orangered;
+            border-right-color: transparent;
+        }
+        .logo8, .logoF {
+            display: inline-block;
+        }
+        .ftop {
+            width: 40px;
+            height: 20px;
+            border-width: 15px 0px 15px 15px;
+            border-style: solid;
+            border-color: firebrick;
+            border-right-color: transparent;
+        }
+        .fbottom{
+            width: 40px;
+            height: 35px;
+            border-left: 15px solid firebrick;
+        }
+        .eight1, .eight2 {
+            width: 30px;
+            height: 20px;
+            border: 15px solid firebrick;
+        }
+        .eight2 {
+            border-top-width: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="square"></div>
+    <div class="rectangle"></div>
+    <div class="triangle-top"></div>
+    <div class="triangle-bot"></div>
+    <div class="triangle-right"></div>
+    <div class="triangle-left"></div>
+    <div class="trapezium"></div>
+    <div class="triangle-width"></div>
+    <div class="acute-triangle"></div>
+    <div class="isosceles-triangle"></div>
+    <div class="isosceles-triangle-left"></div>
+    <div class="isosceles-triangle-right"></div>
+    <div class="flag"></div>
+    <div class="logoF">
+        <div class="ftop"></div>
+        <div class="fbottom"></div>
+    </div>
+    <div class="logo8">
+        <div class="eight1"></div>
+        <div class="eight2"></div>
+    </div>
+</body>
+</html>

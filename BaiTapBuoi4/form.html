@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="=vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <form action="https://api-gateway.f8.edu.vn/action_page.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend><b>Thông tin cơ bản</b></legend>
+            <table>
+                <tbody>
+                <tr>
+                    <div>
+                        <td><label for="fullname">Họ và tên</label></td>
+                        <td><input tabindex="1" id="fullname" type="text" name="fullname" required placeholder="Nguyễn Văn A" autofocus></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="email">Email</label></td>
+                        <td><input tabindex="2" id="email" type="email" name="email" required placeholder="example@gmail.com"></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label tabindex="2" for="password">Mật khẩu</label></td>
+                        <td><input tabindex="2" type="password" id="password" name="password" required minlength="6" autocomplete="off"></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="confirm_password">Nhập lại mật khẩu</label></td>
+                        <td><input tabindex="3" type="password" id="confirm_password" name="confirm_password" requỉred ></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="phone">Số điện thoại</label></td>
+                        <td><input tabindex="4" type="tel" id="phone" name="phone" placeholder="0xxxxxxxxx" pattern="0[0-9]{9}"></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="birthday">Ngày sinh</label></td>
+                        <td><input tabindex="5"  type="date" id="birthday" name="birthday" required></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="website">Website cá nhân</label></td>
+                        <td><input tabindex="6" type="url" id="website" name="website" placeholder="https://..."></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="address">Địa chỉ</label></td>
+                        <td><input tabindex="7" type="text" id="address" name="address" placeholder="Số nhà, đường, phường/xã"></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="zipcode">Mã bưu chính</label></td>
+                        <td><input tabindex="8" type="text" id="zipcode" name="zipcode" maxlength="6" placeholder="700000"></td>
+                    </div>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Thông tin bổ sung</b></legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <div>
+                            <td><label>Giới tính</label></td>
+                            <td>
+                                <input type="radio" id="gender-man" name="gender" value="Nam">Nam
+                                <input type="radio" id="gender-women" name="gender" value="Nữ">Nữ
+                                <input type="radio" id="gender-different" name="gender" value="Khác">Khác
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <table>
+                                <thead>
+                                    <td><label>Sở thích</label></td>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox" name="hobby" value="Đọc sách"> Đọc sách</td>
+                                        <td><input type="checkbox" name="hobby" value="Nghe nhạc"> Nghe nhạc</td>
+                                        <td><input type="checkbox" name="hobby" value="Du lịch"> Du lịch</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="hobby" value="Du lịch"> Lập trình</td>
+                                        <td><input type="checkbox" name="hobby" value="Du lịch"> Nấu ăn</td>
+                                        <td><input type="checkbox" name="hobby" value="Du lịch"> Thể thao</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td><label for="education">Trình độ học vấn</label></td>
+                            <td>
+                                <select name="education" id="education">
+                                    <option value="Trung học">Trung học</option>
+                                    <option value="Cao đẳng">Cao đẳng</option>
+                                    <option value="Đại học" selected>Đại học</option>
+                                    <option value="Sau đại học">Sau đại học</option>
+                                </select>
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td><label for="city">Tỉnh / Thành phố</label></td>
+                            <td>
+                                <select name="city" id="city" multiple="5">
+                                    <option value="Hà Nội">Hà Nội</option>
+                                    <option value="Hà Nội">Đà Nẵng</option>
+                                    <option value="Hà Nội">Hồ Chính Minh</option>
+                                    <option value="Hà Nội">Quảng Ngãi</option>
+                                    <option value="Hà Nội">Nha Trang</option>
+                                    <option value="Hà Nội">Huế</option>
+                                </select>
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td><label for="job">Nghề nghiệp</label></td>
+                            <td>
+                                <select name="job" id="job">
+                                    <option value="pupil">Học sinh</option>
+                                    <option value="student" selected>Sinh viên</option>
+                                    <option value="office-staff" >Nhân viên văn phòng</option>
+                                    <option value="developer">Lập trình viên</option>
+                                    <option value="different">Khác</option>
+                                </select>
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td><label>Khóa học quan tâm</label></td>
+                            <td>
+                                <input type="checkbox" name="course" value="js"> JavaScrip
+                                <input type="checkbox" name="course" value="html-css"> HTML-CSS
+                                <input type="checkbox" name="course" value="reactjs"> ReactJS
+                                <input type="checkbox" name="course" value="nodejs"> NodeJS
+                                <input type="checkbox" name="course" value="python"> Python
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td><label for="isonline">Hình thức học</label></td>
+                            <td>
+                                <input type="radio" name="study_type" value="online" id="isonline"> <label for="isonline">Online</label>
+                                <input type="radio" name="study_type" value="offline" id="isoffline"> <label for="isoffline">Offline</label>
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td><label for="bio">Giới thiệu bản thân</label></td>
+                        <td>
+                            <textarea name="bio" id="bio" rows="4" placeholder="Viết vài dòng về bàn thân"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td><label for="avatar">Ảnh đại diện</label></td>
+                            <td>
+                                <input type="file" id="avatar" name="avatar" accept=".jpg,.png">
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td><label for="cv">CV / Hồ sơ</label></td>
+                            <td>
+                                <input type="file" id="cv" name="cv" accept=".doc,.pdf,.docx">
+                            </td>
+                        </div>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Input đặc biệt</b></legend>
+            <table>
+                <tr>
+                    <div>
+                        <td><label for="fav_color">Màu yêu thích</label></td>
+                        <td>
+                            <input type="color" id="fav_color" value="#ff6600" name="fav_color">
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="satisfaction">Mức độ hài lòng(0-10)</label></td>
+                        <td><input type="range" id="satisfaction" name="satisfaction" min="0" max="10" value="5"></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="study_time">Giờ học hằng ngày</label></td>
+                        <td><input type="time" id="study_time" name="study_time"></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="start_month">Tháng bắt đầu học</label></td>
+                        <td><input type="month" id="start_month" name="start_month"></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="start_week">Tuần bắt đầu học</label></td>
+                        <td><input type="week" id="start_week" name="start_week"></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="register_at">Ngày giờ đăng ký</label></td>
+                        <td><input type="datetime-local" id="register_at" name="register_at"></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="search_course">Tìm kiếm khóa học</label></td>
+                        <td><input type="search" id="search_course" name="search_course" placeholder="Nhập tên khóa học..."></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="experience">Số năm kinh nghiệm</label></td>
+                        <td><input type="number" id="experience" name="experience" min="0" max="50" step="1" ></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="budget">Mức học phí mong muốn</label></td>
+                        <td><input type="range" id="budget" name="budget" min="0" max="5000000" step="100000" value="1000000"></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="fav_lang">Ngôn ngữ lập trình yêu thích</label></td>
+                        <td><input type="text" id="fav_lang" name="fav_lang" placeholder="VD: JavaScript, Python"></td>
+                    </div>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Xác nhận điều khoản</b></legend>
+            <table>
+                <tr>
+                    <td><label for="agree_terms">Tôi đồng ý với điều khoản sử dụng</label></td>
+                    <td><input type="checkbox" id="agree_terms" name="agree_terms" required></td>
+                </tr>
+                <tr>
+                    <td><label for="subscribe">Nhận thông báo qua email</label></td>
+                    <td><input type="checkbox" id="subscribe" name="subscribe"></td>
+                </tr>
+                <tr>
+                    <td><label for="sms_notify">Nhận thông báo qua SMS</label></td>
+                    <td><input type="checkbox" id="sms_notify" name="sms_notify"></td>
+                </tr>
+                <tr>
+                    <td><label for="ref_code">Nhập mã giới thiệu</label></td>
+                    <td><input type="text" id="ref_code" name="ref_code" placeholder="Nhập mã nếu có"></td>
+                </tr>
+                <tr>
+                    <td><label for="course_id">Mã khóa học(ẩn)</label></td>
+                    <td><input type="hidden" id="course_id" name="course_id" value="F8_2024"></td>
+                </tr>
+                <tr>
+                    <td><label for="utm_source">Nguồn truy cập(ẩn)</label></td>
+                    <td><input type="hidden" id="utm_source" name="utm_source" value="website"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Nút bấm</b></legend>
+                <button type="submit">Đăng kí ngay</button>
+                <button type="reset">Nhập lại</button>
+        </fieldset>
+
+
+    </form>
+</body>
+</html>

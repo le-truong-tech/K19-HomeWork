@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+        #toast-toggle-off, #toast-toggle-on {
+            /*display: none;*/
+        }
+        .open-btn{
+            display: inline-block;
+            background-color: black;
+            color: white;
+            padding: 0.5rem 0.8rem;
+        }
+        .toast{
+            display: none;
+            background-color: green;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            margin-left: 2rem;
+        }
+        .close-btn{
+            display: inline-block;
+            background-color: rgba(76, 145, 77, 0.47);
+            padding: 0.2rem 0.5rem;
+            margin-left: 0.8rem;
+        }
+        #toast-toggle-on:checked ~ .toast {
+            display: inline-block;
+        }
+        #toast-toggle-off:checked ~ .toast {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="toast-toggle-on">
+<!--    <input type="checkbox" id="toast-toggle-off">-->
+    <label for="toast-toggle-on" class="open-btn">Show Notification</label>
+    <div class="toast">Save Success! <label for="toast-toggle-on" class="close-btn" >x</label></div>
+</body>
+</html>
