@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    background: purple;
+    font-size: 62.5%;
+}
+#advice-btn, #close-btn{
+    display: none;
+}
+.advice-lbl {
+    background: orange;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.overlay {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+}
+.modal {
+    width: 42rem;
+    height: 48rem;
+    background: #fff;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 2rem;
+}
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem 1rem;
+}
+.textbox-lbl {
+    display: block;
+}
+.title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 0 0.5rem;
+}
+.content {
+    text-align: center;
+}
+.data {
+    margin: 2rem 2rem;
+}
+.text {
+    width: 100%;
+    height: 3.3rem;
+    padding: 1rem 1rem;
+    margin-bottom: 1.2rem;
+    margin-top: 0.3rem;
+    border: purple solid 0.1rem;
+    border-radius:0.4rem;
+}
+.chk {
+    margin: 0.5rem 0;
+}
+.lbl--chk {
+    margin-left: 0.5rem;
+}
+.register-btn {
+    display: block;
+    width: 100%;
+    height: 3rem;
+    color: #fff;
+    background: mediumpurple;
+    border: transparent;
+    border-radius: 2rem;
+    margin: 1rem 0;
+}
+#advice-btn:checked ~ .modal{
+    display: block;
+}
+#close-btn:checked ~ .modal {
+    display: none;
+}

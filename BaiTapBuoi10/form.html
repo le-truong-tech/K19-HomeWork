@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>ThanhLe-Form</title>
+</head>
+<body>
+<input type="radio" id="advice-btn" name="advice-btn" class="advice-btn">
+<input type="radio" id="close-btn" name="advice-btn">
+<label for="advice-btn" class="advice-lbl">Get advice now</label>
+<div class="overlay"></div>
+<form action="https://api-gateway.fullstack.edu.vn/action_page.php" class="modal">
+    <div class="title">Register for a consultation</div>
+    <div class="content">Please fill in your information to receive personalized study plan advice</div>
+    <label for="close-btn" class="close-btn">X</label>
+    <div class="data">
+        <label for="fullname-txt" class="textbox-lbl">Full name</label>
+        <input type="text" id="fullname-txt" class="text" placeholder="Nguyen Van A">
+        <label for="phonenumber-txt" class="textbox-lbl">Phone number</label>
+        <input type="phone" id="phonenumber-txt" class="text" placeholder="091298493738">
+        <label for="email-txt" class="textbox-lbl">Email</label>
+        <input type="email" id="email-txt" class="text" placeholder="example@gmail.com">
+        <label class="textbox-lbl">Course of interest</label>
+        <div class="chk">
+            <input type="checkbox" id="html-css--chk" value="html-css">
+            <label for="html-css--chk" class="lbl--chk">HTML & CSS</label>
+        </div>
+        <div class="chk">
+            <input type="checkbox" id="js--chk" value="js">
+            <label for="js--chk" class="lbl--chk">JavaScript</label>
+        </div>
+        <div class="chk">
+            <input type="checkbox" id="FE--chk" value="FE">
+            <label for="FE--chk" class="lbl--chk">Front-end roadmap</label>
+        </div>
+        <div class="chk">
+            <input type="checkbox" id="reactjs--chk" value="">
+            <label for="reactjs--chk" class="lbl--chk">ReactJS</label>
+        </div>
+        <div class="chk">
+            <input type="checkbox" id="unclear--chk" value="unclear">
+            <label for="unclear--chk" class="lbl--chk">Unclear - need advice</label>
+        </div>
+        <button class="register-btn">REGISTER FOR A CONSULTATION NOW</button>
+    </div>
+</form>
+</body>
+</html>
