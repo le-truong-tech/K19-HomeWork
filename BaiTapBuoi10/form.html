@@ -12,38 +12,76 @@
 <input type="radio" id="advice-btn" name="advice-btn" class="advice-btn">
 <input type="radio" id="close-btn" name="advice-btn">
 <label for="advice-btn" class="advice-lbl">Get advice now</label>
-<div class="overlay"></div>
+<label for="close-btn" class="overlay">oke</label>
 <form action="https://api-gateway.fullstack.edu.vn/action_page.php" class="modal">
     <div class="title">Register for a consultation</div>
     <div class="content">Please fill in your information to receive personalized study plan advice</div>
     <label for="close-btn" class="close-btn">X</label>
     <div class="data">
-        <label for="fullname-txt" class="textbox-lbl">Full name</label>
-        <input type="text" id="fullname-txt" class="text" placeholder="Nguyen Van A">
-        <label for="phonenumber-txt" class="textbox-lbl">Phone number</label>
-        <input type="phone" id="phonenumber-txt" class="text" placeholder="091298493738">
-        <label for="email-txt" class="textbox-lbl">Email</label>
-        <input type="email" id="email-txt" class="text" placeholder="example@gmail.com">
+        <div class="tool">
+            <label for="fullname-txt" class="textbox-lbl">Full name</label>
+            <input type="text" id="fullname-txt" class="text" placeholder="Nguyen Van A">
+            <div class="tooltip">
+                <div class="box1">Please enter your fullname</div>
+                <div class="box2"></div>
+            </div>
+        </div>
+        <div class="tool">
+            <label for="phonenumber-txt" class="textbox-lbl">Phone number</label>
+            <input type="tel" id="phonenumber-txt" class="text" placeholder="091298493738">
+            <div class="tooltip">
+                <div class="box1">Here is the phone number for us to contact you for consultation</div>
+                <div class="box2"></div>
+            </div>
+        </div>
+        <div class="tool">
+            <label for="email-txt" class="textbox-lbl">Email</label>
+            <input type="email" id="email-txt" class="text" placeholder="example@gmail.com">
+            <div class="tooltip">
+                <div class="box1">Email to receive course information (optional)</div>
+                <div class="box2"></div>
+            </div>
+        </div>
         <label class="textbox-lbl">Course of interest</label>
         <div class="chk">
             <input type="checkbox" id="html-css--chk" value="html-css">
             <label for="html-css--chk" class="lbl--chk">HTML & CSS</label>
+            <div class="tooltip">
+                <div class="box1">Basic web development course</div>
+                <div class="box2"></div>
+            </div>
         </div>
         <div class="chk">
             <input type="checkbox" id="js--chk" value="js">
             <label for="js--chk" class="lbl--chk">JavaScript</label>
+            <div class="tooltip">
+                <div class="box1">Programming languages for dynamic web</div>
+                <div class="box2"></div>
+            </div>
         </div>
         <div class="chk">
             <input type="checkbox" id="FE--chk" value="FE">
             <label for="FE--chk" class="lbl--chk">Front-end roadmap</label>
+            <div class="tooltip">
+                <div class="box1">A complete roadmap to becoming a Front-end Developer</div>
+                <div class="box2"></div>
+            </div>
         </div>
         <div class="chk">
             <input type="checkbox" id="reactjs--chk" value="">
             <label for="reactjs--chk" class="lbl--chk">ReactJS</label>
+            <div class="tooltip">
+                <div class="box1">The most popular JavaScript library today</div>
+                <div class="box2"></div>
+            </div>
         </div>
         <div class="chk">
             <input type="checkbox" id="unclear--chk" value="unclear">
             <label for="unclear--chk" class="lbl--chk">Unclear - need advice</label>
+            <div class="tooltip">
+                <div class="box1">We will advise you on a suitable route</div>
+                <div class="box2"></div>
+            </div>
         </div>
         <button class="register-btn">REGISTER FOR A CONSULTATION NOW</button>
     </div>

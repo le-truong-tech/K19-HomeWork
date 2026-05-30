@@ -4,28 +4,41 @@
     box-sizing: border-box;
 }
 html {
-    background: purple;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     font-size: 62.5%;
+    height: 100vh;
 }
 #advice-btn, #close-btn{
     display: none;
 }
 .advice-lbl {
+    width: 24rem;
+    height: 5rem;
     background: orange;
     font-size: 2rem;
-    padding: 1rem 1rem;
+    padding: 1rem 0;
     border-radius: 2rem;
     position: absolute;
     top: 50%;
     left: 50%;
+    margin-left: -12rem;
+    margin-top: -2.5rem;
+    text-align: center;
+    line-height: 3rem;
+    cursor: pointer;
+
 }
 .overlay {
     display: none;
-    width: 100vw;
-    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background: rgba(0,0,0,0.5);
 }
 .modal {
+    display: none;
     width: 42rem;
     height: 48rem;
     background: #fff;
@@ -57,6 +70,7 @@ html {
 }
 .data {
     margin: 2rem 2rem;
+    position: relative;
 }
 .text {
     width: 100%;
@@ -83,9 +97,44 @@ html {
     border-radius: 2rem;
     margin: 1rem 0;
 }
-#advice-btn:checked ~ .modal{
+#advice-btn:checked ~ .modal, #advice-btn:checked ~ .overlay {
     display: block;
 }
-#close-btn:checked ~ .modal {
+#close-btn:checked ~ .modal{
     display: none;
+}
+.textbox-lbl::after {
+    content: " *";
+    color: #ef4444;
+}
+label[for="email-txt"]::after {
+    content: none;
+}
+.tool {
+    position: relative;
+}
+.tooltip {
+    visibility: hidden;
+    position: absolute;
+    top: -3.8rem;
+    left: 0;
+}
+.chk {
+    position: relative;
+}
+.box1 {
+    background: darkblue;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.box2 {
+    width: 0;
+    border-width: 6px;
+    border-style: solid;
+    border-color: darkblue transparent transparent transparent;
+    margin-left: 15px;
+}
+.text:hover ~ .tooltip, input[type=checkbox]:hover ~ .tooltip {
+    visibility: visible;
 }
